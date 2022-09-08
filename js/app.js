@@ -26,3 +26,5 @@ plusknap.addEventListener('click', ()=> {
 reset.addEventListener('click', ()=>{
     countall.value =0;
 })
+
+// js end
