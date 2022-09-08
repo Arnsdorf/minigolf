@@ -1,0 +1,66 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+
+<div class="container startspil text-dark rounded-2">
+    <div class="col-12 new mt-5 ">
+        <div class="fs-3 text-center mt-5">Start spil?</div>
+    </div>
+    <div class="col-12">
+        <div class="col-12 p-3">
+            <label for="basic-url" class="form-label">Indtast dit navn</label>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+        </div>
+    </div>
+    <div class="col-12 huller">
+        <div class="col-12 p-3">
+            <label for="basic-url" class="form-label">Hvor mange huller er banen?</label>
+            <div class="input-group tal">
+                <input type="text" class="form-control input-number" aria-describedby="basic-addon3">
+            </div>
+        </div>
+        <div class="beginbtns d-sm-inline justify-content-sm-center">
+            <div class="col-12 p-2">
+                <button type="button" class=" btn-sm rounded-2 btn-danger ">Luk</button>
+            </div>
+            <div class="col-12 p-2">
+                <button onclick="location.href='index.html'" type="button" class=" btn-sm rounded-1 btn-success btn-start text-hvid">Start</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>

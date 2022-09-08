@@ -1,14 +1,19 @@
-* {
+½* {
 	box-sizing: border-box;
 }
 
 body {
 	margin: 0;
+	background-image: linear-gradient(90deg, #0083B0 0%, #0083B0 50%, #0083B0  100%);
+	font-family: "Poppins";
 }
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
+	font-family: "Poppins";
+	font-weight: bold;
+	color: white;
 }
 
 ul, ol {
@@ -30,4 +35,76 @@ img {
 	display: block;
 	max-width: 100%;
 	height: auto;
+}
+
+
+.reset{
+	font-family: Poppins;
+	border: 1px solid white;
+	margin: 10px;
+	padding: 15px 30px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	display: block;
+	box-shadow: 0px 0px 14px -7px #4c4cdf;
+	background-image: linear-gradient(45deg, #00B4DB 0%, #0083B0 51%, #00B4DB  100%);
+}
+
+.forfra{
+	font-family: Poppins;
+	border: 1px solid white;
+	margin: 10px;
+	padding: 15px 30px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	display: block;
+	box-shadow: 0px 0px 14px -7px #d93701;
+	background-image: linear-gradient(45deg, #dd1818 0%, #333333 51%, #333333  100%);
+}
+
+#modal{
+	padding: 1em;
+	max-width: 50ch;
+	& > * {
+		margin: 0 0 0.5rem 0;
+	}
+	border: 0;
+	box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}
+
+.modal-h{
+	color: black;
+	font-family: Poppins;
+	font-weight: bold;
+}
+
+#modal::backdrop{
+	background: rgb(0 0 0 / .3);
+}
+
+.no-button{
+	font-family: Poppins;
+	font-weight: bold;
+	background-color: #00B4DB;
+	border: 1px solid black;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.yes-button{
+	font-family: Poppins;
+	font-weight: bold;
+	background-color: #00B4DB;
+	border: 1px solid black;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.newgame{
+	margin-top: 260px;
 }
