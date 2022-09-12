@@ -1,56 +1,54 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-	<meta charset="utf-8">
-	
-	<title>MiniGolf App</title>
-	
-	<meta name="robots" content="All">
-	<meta name="author" content="Udgiver">
-	<meta name="copyright" content="Information om copyright">
-	
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="css/styles.css" rel="stylesheet" type="text/css">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>MiniGolf App</title>
+
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
 
 <div class="container">
-	<h1 class="text-center m-5">MiniGolf App</h1>
-</div>
+    <h1 class="text-center m-5">MiniGolf App</h1>
 
-<div class="input-group sektion p-4 felt1">
-	<button class="input-group-text btn_minus" id="addon-wrapping">-</button>
-	<h1 type="text" class="form-control felt text-center"  aria-describedby="addon-wrapping">0</h1>
-	<button class="input-group-text btn_plus" id="addon-wrappings">+</button>
-</div>
+	<div class="holes"></div>
 
-
-<div class="input-group mb-2 p-4">
-	<span class="input-group-text text-dark " id="basic-addon1"><h4>Ialt:</h4></span>
-	<input class="form-control total text-start" value="0">
-</div>
+    <div class="input-group mb-2 p-4">
+        <span class="input-group-text text-dark " id="basic-addon1"><h4>Ialt:</h4></span>
+        <input class="form-control total text-start" value="0">
+    </div>
 
 
-<div class="btn_reset d-flex justify-content-center m-3">
-	<div class="key_reset">
-		<button class="reset">RESET</button>
-	</div>
-</div>
+    <div class="btn_reset d-flex justify-content-center m-3">
+        <div class="key_reset">
+            <button class="reset">RESET</button>
+        </div>
+    </div>
 
-<div class="btn_reset d-flex justify-content-center m-3">
-	<div class="key_forfra">
-		<button class="forfra button open-button">START FORFRA</button>
-	</div>
+    <div class="btn_reset d-flex justify-content-center m-3">
+        <div class="key_forfra">
+            <button class="forfra button open-button">START FORFRA</button>
+        </div>
+    </div>
+
+	<input type="number" class="form-control numberOfHoles" value="9">
 </div>
 
 <dialog id="modal">
-	<h2 class="modal-h">Er du nu helt sikker?</h2>
-	<button onclick="location.href='forside.html'" class="yes-button">JA</button>
-	<button class="no-button close-button">NEJ</button><a href="index.html"></a>
+    <h2 class="modal-h">Er du nu helt sikker?</h2>
+    <button onclick="location.href='forside.html'" class="yes-button">JA</button>
+    <button class="no-button close-button">NEJ</button>
+    <a href="index.html"></a>
 </dialog>
 
 
@@ -67,10 +65,6 @@ for ( let i=iStart; i>10; i++){
 </script>-->
 
 
-
-
-
-<script type="module" src="js/scoreBoard.js"></script>
 <script type="module" src="js/app.js"></script>
 <script type="module" src="js/dialog.js"></script>
 
